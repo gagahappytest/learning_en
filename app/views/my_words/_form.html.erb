@@ -1,0 +1,37 @@
+<%= form_for(@my_word) do |f| %>
+  <% if @my_word.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@my_word.errors.count, "error") %> prohibited this my_word from being saved:</h2>
+
+      <ul>
+      <% @my_word.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :word %><br>
+    <%= f.text_field :word %>
+  </div>
+  <div class="field">
+    <%= f.label :soundmark %><br>
+    <%= f.text_field :soundmark %>
+  </div>
+  <div class="field">
+    <%= f.label :explain %><br>
+    <%= f.text_area :explain %>
+  </div>
+  <div class="field">
+    <%= f.label :add_time %><br>
+    <%= f.text_field :add_time %>
+  </div>
+  <div class="field">
+    <%= f.label :search_times %><br>
+    <%= f.number_field :search_times %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

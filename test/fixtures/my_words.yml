@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  soundmark: MyString
+  explain: MyText
+  add_time: MyString
+  search_times: 1
+
+two:
+  word: MyString
+  soundmark: MyString
+  explain: MyText
+  add_time: MyString
+  search_times: 1

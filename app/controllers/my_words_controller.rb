@@ -4,7 +4,7 @@ class MyWordsController < ApplicationController
   # GET /my_words
   # GET /my_words.json
   def index
-    @my_words = MyWord.all.order('add_time desc')
+    @my_words = MyWord.all
   end
 
   # GET /my_words/1
